@@ -3,8 +3,8 @@ import React from 'react';
 const DisplaySimpson = ({simpson}) => {
   return (
     simpson && (
-      <div className="card">
-        <h2 className="name">{simpson.character}</h2>
+      <div className="QuoteCard">
+        <h2 className="cite">{simpson.character}</h2>
         <div
           className={
             simpson.characterDirection === 'Right'
@@ -12,9 +12,9 @@ const DisplaySimpson = ({simpson}) => {
               : 'container-left'
           }
         >
-          <img className="character-img" alt="character" src={simpson.image} />
+          <img className="QuoteCard img" alt="character" src={simpson.image} />
           <div className="quote-div">
-            <p className="quote">{simpson.quote}</p>
+            <p className="">{simpson.quote}</p>
           </div>
        </div>
       </div>
